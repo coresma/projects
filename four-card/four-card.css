@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Styling the body */
+body {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+  font-size: 12px;
+  width: 80%;
+  margin: 0 auto;
+  font-family: Poppins;
+}
+
+/* Styling the header */
+.main-head {
+  text-align: center;
+  margin-top: 3em;
+  
+}
+
+.sub-head p {
+  font-size: 1.5em;
+}
+
+.sub-head h1 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.last-head {
+  font-size: 1em;
+  padding: 1em;
+  margin-top: .5em;
+}
+/* end of styling the header */
+
+/* styling the boxes */
+.card {
+  padding: 1em;
+  border-radius: 5px;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-header {
+  font-weight: 400;
+  color: hsl(234, 12%, 34%);
+}
+
+.card-one {
+  margin-top: 3em;
+  border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.card-two {
+  border-top: 3px solid hsl(0, 78%, 62%);
+}
+
+.card-three {
+  border-top: 3px solid hsl(34, 97%, 64%);
+}
+
+.card-four {
+  border-top: 3px solid hsl(212, 86%, 64%);
+}
+
+.image {
+  margin-top: 3em;
+  text-align: right;
+}
+/* end of styling boxes */
+
+/* media queries */
+@media (min-width: 768px) {
+  body{
+    height: 100%;
+  }
+  .main-head{
+    margin-top: 1em;
+  }
+  .sub-head p {
+    font-size: 2em;
+  }
+  .last-head {
+    font-size: 1rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1em;
+    border-bottom: 2em;
+  }
+  
+  .sub-head h1 {
+    font-weight: 600;
+    font-size: 2.1em;}
+
+
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin-top: 1em;
+  }
+
+  .card-one {
+    grid-area: 2/1/4/2;
+    margin-top: 0;
+  }
+
+  .card-two {
+    grid-area: 1/2/3/3;
+  }
+
+  .card-three {
+    grid-area: 3/2/5/3;
+  }
+
+  .card-four {
+    grid-area: 2/3/4/4;
+  }
+
+  .image {
+    margin-top: 1.5em;
+  }
+
+  .card {
+    padding: 1em;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
