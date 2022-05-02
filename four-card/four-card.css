@@ -1,8 +1,10 @@
+/* universal selector styling */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 /* Styling the body */
 body {
   background-color: hsl(0, 0%, 98%);
